@@ -3,16 +3,16 @@ function Nav() {
     <div className="nav">
       <ul>
         <li>
-          <a>Home</a>
+          <a href="#home">Home</a>
         </li>
         <li>
-          <a>About</a>
+          <a href="#aboutme">About</a>
         </li>
         <li>
-          <a>Projects</a>
+          <a href="#projects">Projects</a>
         </li>
         <li>
-          <a>Contact</a>
+          <a href="#footer">Contact</a>
         </li>
       </ul>
     </div>

@@ -11,7 +11,7 @@ function Projects() {
     link: "link",
   };
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <h4>PROJECTS</h4>
       <h3>{description}</h3>
       <Project id={0} project={project1} />

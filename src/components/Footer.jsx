@@ -3,7 +3,7 @@ import SocialLinks from "./footer/SocialLinks";
 
 function Footer() {
   return (
-    <div className="footer">
+    <div className="footer" id="footer">
       <div className="footerinfo">
         <Contact />
         <SocialLinks />

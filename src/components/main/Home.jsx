@@ -4,7 +4,7 @@ import TechStack from "./Home/TechStack";
 
 function Home() {
   return (
-    <div className="home">
+    <div className="home" id="home">
       <div className="info">
         <HomeInfo />
         <Image />
