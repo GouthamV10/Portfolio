@@ -2,8 +2,8 @@ import PropTypes from "prop-types";
 import ProjectDesc from "./ProjectDesc";
 import ProjectImg from "./ProjectImg";
 
-function Project({ id, project }) {
-  const comp1 = <ProjectImg />;
+function Project({ id, image, project }) {
+  const comp1 = <ProjectImg imageUrl={image} />;
   const comp2 = <ProjectDesc project={project} />;
 
   return (
@@ -25,6 +25,7 @@ function Project({ id, project }) {
 
 Project.propTypes = {
   id: PropTypes.number.isRequired,
+  image: PropTypes.string.isRequired,
   project: PropTypes.shape({
     title: PropTypes.string.isRequired,
     desc: PropTypes.string.isRequired,

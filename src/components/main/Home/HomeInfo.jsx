@@ -11,14 +11,14 @@ function HomeInfo() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="src/assets/linkedin.svg" />
+          <img src="assets/linkedin.svg" />
         </a>
         <a
           href="https://www.github.com/gouthamv10"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="src/assets/github.svg" />
+          <img src="assets/github.svg" />
         </a>
         <a
           href="https://leetcode.com/user3280F/"
@@ -26,7 +26,7 @@ function HomeInfo() {
           rel="noopener noreferrer"
         >
           <img
-            src="src/assets/footer/leetcode-footer.png"
+            src="assets/footer/leetcode-footer.png"
             style={{ width: "24px" }}
           />
         </a>

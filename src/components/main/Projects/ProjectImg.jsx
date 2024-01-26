@@ -1,9 +1,13 @@
-function ProjectImg() {
+import PropTypes from "prop-types";
+
+function ProjectImg({ imageUrl }) {
   return (
     <div className="projectimg">
-      <img src="src/assets/aboutmeimg.jpg"></img>
+      <img src={imageUrl}></img>
     </div>
   );
 }
-
+ProjectImg.propTypes = {
+  imageUrl: PropTypes.string.isRequired,
+};
 export default ProjectImg;

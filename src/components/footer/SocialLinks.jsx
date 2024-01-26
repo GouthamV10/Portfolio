@@ -7,7 +7,7 @@ function SocialLinks() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="src/assets/footer/linkedin-footer.png" />
+          <img src="assets/footer/linkedin-footer.png" />
           <p>LinkedIn</p>
         </a>
       </div>
@@ -17,7 +17,7 @@ function SocialLinks() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="src/assets/footer/github-footer.png" />
+          <img src="assets/footer/github-footer.png" />
           <p>Github</p>
         </a>
       </div>
@@ -27,7 +27,7 @@ function SocialLinks() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="src/assets/footer/leetcode-footer.png" />
+          <img src="assets/footer/leetcode-footer.png" />
           <p>Leetcode</p>
         </a>
       </div>

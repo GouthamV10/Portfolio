@@ -9,7 +9,12 @@ function Projects() {
       <h4>{description}</h4>
       <div className="project-stack">
         {projects.map((project) => (
-          <Project key={project.id} id={project.id} project={project} />
+          <Project
+            key={project.id}
+            id={project.id}
+            image={project.image}
+            project={project}
+          />
         ))}
       </div>
     </div>

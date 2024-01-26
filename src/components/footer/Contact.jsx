@@ -7,17 +7,17 @@ function Contact() {
       <h2>Connect With Me 👇🏻</h2>
       <div className="contactrow">
         <ContactInfo
-          url="src/assets/footer/location.png"
+          url="assets/footer/location.png"
           name="Location"
           desc="Bengaluru, India"
         />
         <ContactInfo
-          url="src/assets/footer/mail.png"
+          url="assets/footer/mail.png"
           name="Mail"
           desc="goutham.v.16@gmail.com"
         />
         <ContactInfo
-          url="src/assets/footer/call.png"
+          url="assets/footer/call.png"
           name="Phone Number"
           desc="+91 8660381127"
         />

@@ -19,7 +19,7 @@ function ProjectDesc({ project }) {
         ) : (
           <a href={github} target="_blank" rel="noopener noreferrer">
             <span>Code </span>
-            <img src={"/src/assets/projects/icons8-github-48.png"} />
+            <img src={"/assets/projects/icons8-github-48.png"} />
           </a>
         )}
         {linkcheck === "" ? (
@@ -27,7 +27,7 @@ function ProjectDesc({ project }) {
         ) : (
           <a href={link} target="_blank" rel="noopener noreferrer">
             <span>Live Demo</span>{" "}
-            <img src={"/src/assets/projects/icons8-share.svg"} />
+            <img src={"/assets/projects/icons8-share.svg"} />
           </a>
         )}
       </div>
