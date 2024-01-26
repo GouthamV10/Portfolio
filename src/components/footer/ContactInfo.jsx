@@ -4,7 +4,7 @@ function ContactInfo({ url, name, desc }) {
   return (
     <div className="contactinfo">
       <img src={url} alt="error"></img>
-      <div>
+      <div className="contactinfodesc">
         <h6>{name}</h6>
         <p>{desc}</p>
       </div>

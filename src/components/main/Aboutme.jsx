@@ -3,7 +3,7 @@ import AboutMeInfo from "./About Me/AboutMeInfo";
 
 function AboutMe() {
   return (
-    <div className="aboutme" id="aboutme">
+    <div className="aboutme" id="about">
       <AboutMeImage />
       <AboutMeInfo />
     </div>

@@ -20,6 +20,16 @@ function HomeInfo() {
         >
           <img src="src/assets/github.svg" />
         </a>
+        <a
+          href="https://leetcode.com/user3280F/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="src/assets/footer/leetcode-footer.png"
+            style={{ width: "24px" }}
+          />
+        </a>
       </div>
     </div>
   );

@@ -5,21 +5,21 @@ function Contact() {
     <div className="contact">
       <h4>CONTACT</h4>
       <h2>Connect With Me 👇🏻</h2>
-      <div className="contactinfo">
+      <div className="contactrow">
         <ContactInfo
-          url="src/assets/phone.svg"
+          url="src/assets/footer/location.png"
           name="Location"
           desc="Bengaluru, India"
         />
         <ContactInfo
-          url="src/assets/phone.svg"
-          name="Location"
-          desc="Bengaluru, India"
+          url="src/assets/footer/mail.png"
+          name="Mail"
+          desc="goutham.v.16@gmail.com"
         />
         <ContactInfo
-          url="src/assets/phone.svg"
-          name="Location"
-          desc="Bengaluru, India"
+          url="src/assets/footer/call.png"
+          name="Phone Number"
+          desc="+91 8660381127"
         />
       </div>
     </div>

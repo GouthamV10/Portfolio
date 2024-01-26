@@ -2,6 +2,8 @@ import PropTypes from "prop-types";
 
 function ProjectDesc({ project }) {
   const { title, desc, tech, github, link } = { ...project };
+  let gitcheck = github;
+  let linkcheck = link;
   return (
     <div className="projectdesc">
       <h4>{title}</h4>
@@ -12,14 +14,22 @@ function ProjectDesc({ project }) {
         ))}
       </div>
       <div className="desclinks">
-        <a href={github} target="_blank" rel="noopener noreferrer">
-          <span>Code </span>
-          <img src={"/src/assets/projects/icons8-github-48.png"} />
-        </a>
-        <a href={link} target="_blank" rel="noopener noreferrer">
-          <span>Live Demo</span>{" "}
-          <img src={"/src/assets/projects/icons8-share.svg"} />
-        </a>
+        {gitcheck === "" ? (
+          <span></span>
+        ) : (
+          <a href={github} target="_blank" rel="noopener noreferrer">
+            <span>Code </span>
+            <img src={"/src/assets/projects/icons8-github-48.png"} />
+          </a>
+        )}
+        {linkcheck === "" ? (
+          <span></span>
+        ) : (
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <span>Live Demo</span>{" "}
+            <img src={"/src/assets/projects/icons8-share.svg"} />
+          </a>
+        )}
       </div>
     </div>
   );

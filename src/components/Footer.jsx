@@ -8,7 +8,7 @@ function Footer() {
         <Contact />
         <SocialLinks />
       </div>
-      <p>Copyright &copy; 2024. All rights are reserved</p>
+      <p id="copyright">Copyright &copy; 2024. All rights are reserved</p>
     </div>
   );
 }
