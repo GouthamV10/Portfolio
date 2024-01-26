@@ -237,7 +237,7 @@ p {
   width: 75%;
   margin: 50px auto;
   padding: 50px;
-  border: 1px groove black;
+  border: 1.5px dotted black;
   border-radius: 10px;
 }
 
@@ -269,35 +269,73 @@ p {
 .project {
   margin: 20px 0;
   padding: 20px;
-  width: 75%;
+  width: 85%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 50px;
 }
+
 .projectdesc {
-  text-align: left;
-  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
 }
 .projectdesc h4 {
   margin: 0;
   font-size: 20px;
   color: darkcyan;
   padding-top: 2px;
-  text-align: left;
 }
 
 .projectdesc p {
-  padding-top: 10px;
+  padding-top: 5px;
   font-size: 14px;
+  margin: 0;
 }
 
 .projectdesc h5 {
-  padding-top: 5px;
+  padding: 10px 10px;
   font-size: 18px;
   margin: 0;
   color: black;
 }
 
+.desclinks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 10px;
+  gap: 20px;
+}
+
+.desclinks a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.desclinks a span {
+  padding-right: 5px;
+  font-size: 14px;
+}
+
+.desclinks a img {
+  margin: 0;
+  padding: 0;
+  width: 22px;
+}
+
+.tech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 /*Footer*/
 .footer {
   background-color: black;

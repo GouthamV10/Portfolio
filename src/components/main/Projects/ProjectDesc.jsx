@@ -6,10 +6,20 @@ function ProjectDesc({ project }) {
     <div className="projectdesc">
       <h4>{title}</h4>
       <p>{desc}</p>
-      <h5>{tech}</h5>
-      <div className="logo">
-        {github}
-        {link}
+      <div className="tech">
+        {tech.map((techItem, index) => (
+          <h5 key={index}>{techItem}</h5>
+        ))}
+      </div>
+      <div className="desclinks">
+        <a href={github} target="_blank" rel="noopener noreferrer">
+          <span>Code </span>
+          <img src={"/src/assets/projects/icons8-github-48.png"} />
+        </a>
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <span>Live Demo</span>{" "}
+          <img src={"/src/assets/projects/icons8-share.svg"} />
+        </a>
       </div>
     </div>
   );

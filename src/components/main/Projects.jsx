@@ -6,7 +6,7 @@ function Projects() {
   const project1 = {
     title: "project1",
     desc: "desc           Explore some of the projects I've worked on that showcase my technical and prob",
-    tech: ["react, scss"],
+    tech: ["react", "scss"],
     github: "github.com",
     link: "link",
   };
