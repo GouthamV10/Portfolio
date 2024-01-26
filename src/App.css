@@ -12,11 +12,13 @@
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  background-color: white;
+  color: black;
   z-index: 2;
-  background-color: black;
-  color: white;
   margin: 0;
   padding: 0;
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
 }
 
 .header h1 {
@@ -37,7 +39,7 @@
 }
 
 .nav ul li a {
-  color: white;
+  color: black;
   font-size: 16px;
   text-decoration: none;
   transition: font-size 0.1s;
@@ -60,13 +62,15 @@
 .home {
   width: 60%;
   text-align: center;
-  height: 80vh;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 75px;
+  padding: 50px;
+  border: 1.5px dotted black;
+  border-radius: 10px;
+  margin-top: 110px;
 }
 
 .info {
@@ -97,58 +101,201 @@
 }
 
 .image {
-  border: 1px solid black;
+  border: 1.5px ridge black;
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: borderAnimation 3s infinite linear;
+  transition: box-shadow 0.5s ease;
+}
+@keyframes borderAnimation {
+  0%,
+  100% {
+    border-radius: 47% 45% 45% 47%;
+  }
+  25%,
+  75% {
+    border-radius: 45% 47% 47% 45%;
+  }
+  50% {
+    border-radius: 47% 45% 47% 45%;
+  }
+}
+.image img {
+  width: 220px;
+  height: 220px;
 }
 
+/* Techstack*/
 .techstack {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding-top: 30px;
 }
 
 .techstack h5 {
-  font-size: 20px;
+  font-size: 24px;
   padding-right: 20px;
-  border-right: 2px solid black;
+  color: black;
 }
 
+.techlogo {
+  margin: 0;
+  display: flex;
+  align-items: start;
+  justify-content: left;
+  flex-wrap: wrap;
+  border-left: 2px solid black;
+  padding-left: 20px;
+}
+
+.techlogo img {
+  margin: 0;
+  padding: 12.5px 10px;
+}
+
+.tech-item {
+  position: relative;
+  display: inline-block;
+}
+
+.tech-item span {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: 1px groove black;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tech-item:hover span {
+  opacity: 1;
+}
+
+/*About Me*/
 .aboutme {
   width: 75%;
   text-align: center;
-  height: 80vh;
-  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin: 100px auto;
+  padding: 50px;
+  border: 1.5px dotted black;
+  border-radius: 10px;
 }
 
 .aboutmeinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
   text-align: left;
+  padding-left: 50px;
 }
 
 .aboutmeimg img {
   width: 25rem;
   height: 15rem;
   border-radius: 10px;
-  margin: 50px;
+  border: 1px inset black;
 }
 
+.aboutmeinfo h5,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.aboutmeinfo h5 {
+  font-size: 18px;
+  color: darkcyan;
+  padding-top: 2px;
+}
+
+.aboutme h4 {
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+.aboutme p {
+  padding-top: 10px;
+  font-size: 14px;
+}
 /*Project*/
 .projects {
-  padding-bottom: 75px;
-}
-.projectimg img {
-  width: 300px;
+  width: 75%;
+  margin: 50px auto;
+  padding: 50px;
+  border: 1px groove black;
+  border-radius: 10px;
 }
 
-.project {
+.projects h5 {
+  margin: 0;
+  font-size: 18px;
+  color: darkcyan;
+  padding-top: 2px;
+  text-align: left;
+}
+
+.projects h4 {
+  padding: 10px 0;
+  font-size: 20px;
+  margin: 0;
+}
+.projectimg img {
+  height: 15rem;
+  width: 25rem;
+  border-radius: 10px;
+  border: 1px inset black;
+}
+.project-stack {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  margin: 15px 0;
+  justify-content: center;
+}
+.project {
+  margin: 20px 0;
+  padding: 20px;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.projectdesc {
+  text-align: left;
+  padding-left: 40px;
+}
+.projectdesc h4 {
+  margin: 0;
+  font-size: 20px;
+  color: darkcyan;
+  padding-top: 2px;
+  text-align: left;
+}
+
+.projectdesc p {
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.projectdesc h5 {
+  padding-top: 5px;
+  font-size: 18px;
+  margin: 0;
+  color: black;
 }
 
 /*Footer*/

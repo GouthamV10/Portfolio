@@ -5,6 +5,7 @@ import Projects from "./main/Projects";
 function Main() {
   return (
     <div className="main">
+      <div className="sizedBox" id="home"></div>
       <Home />
       <AboutMe />
       <Projects />

@@ -1,7 +1,7 @@
 function Image() {
   return (
     <div className="image">
-      <img src="vite.svg"></img>
+      <img src="src/assets/self.jpg"></img>
     </div>
   );
 }

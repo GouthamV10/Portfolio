@@ -5,18 +5,20 @@ function Projects() {
 
   const project1 = {
     title: "project1",
-    desc: "desc",
+    desc: "desc           Explore some of the projects I've worked on that showcase my technical and prob",
     tech: ["react, scss"],
     github: "github.com",
     link: "link",
   };
   return (
     <div className="projects" id="projects">
-      <h4>PROJECTS</h4>
-      <h3>{description}</h3>
-      <Project id={0} project={project1} />
-      <Project id={1} project={project1} />
-      <Project id={2} project={project1} />
+      <h5>PROJECTS</h5>
+      <h4>{description}</h4>
+      <div className="project-stack">
+        <Project id={1} project={project1} />
+        <Project id={2} project={project1} />
+        <Project id={3} project={project1} />
+      </div>
     </div>
   );
 }

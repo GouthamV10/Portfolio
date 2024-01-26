@@ -1,7 +1,7 @@
 function AboutMeImage() {
   return (
     <div className="aboutmeimg">
-      <img src="src/assets/aboutmeimg.jpg" />
+      <img src="src/assets/aboutme.webp" />
     </div>
   );
 }
