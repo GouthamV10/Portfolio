@@ -11,7 +11,7 @@ function Footer() {
         <Contact />
         <SocialLinks />
       </div>
-      <p className="p-5 pb-0 pt-25 text-sm">
+      <p className="p-0 m-0 pb-0 pt-25 text-sm max-sm:pt-5 max-sm:text-center max-sm:text-xs">
         Copyright &copy; 2024. All rights are reserved
       </p>
     </div>

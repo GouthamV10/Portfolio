@@ -6,21 +6,21 @@ function ProjectDesc({ project }) {
   let linkcheck = link;
   return (
     <div className="projectdesc flex flex-col justify-around m-0 ">
-      <h4 className="m-0 text-cyan-700 text-xl p-0 pb-2 font-semibold text-center">
+      <h4 className="m-0 text-cyan-700 text-xl py-2 font-semibold text-center ">
         {title}
       </h4>
-      <p className="p-0 pb-2 text-base text-center">{desc}</p>
-      <div className="tech flex justify-center items-center flex-wrap p-0 m-0 pb-2 text-left">
+      <p className="p-0 pb-2 text-base text-center ">{desc}</p>
+      <div className="tech flex justify-center items-center flex-wrap pb-2 m-0 text-left max-sm:justify-start">
         {tech.map((techItem, index) => (
           <h5
-            className="m-0 text-lg p-0 px-2 italic text-gray-700 underline"
+            className="m-0 text-lg p-0 px-2 italic text-gray-700 underline max-sm:text-base"
             key={index}
           >
             {techItem}
           </h5>
         ))}
       </div>
-      <div className="flex justify-center items-center m-0 p-2 gap-10">
+      <div className="flex justify-center items-center m-0 p-2 gap-5">
         {gitcheck === "" ? (
           <span></span>
         ) : (
@@ -30,9 +30,9 @@ function ProjectDesc({ project }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="pr-2 text-sm">Code </span>
+            <span className="text-sm px-1">Code </span>
             <img
-              className="m-0 p-0 w-5"
+              className="m-0  w-5 "
               src={"/assets/projects/icons8-github-48.png"}
             />
           </a>
@@ -46,9 +46,9 @@ function ProjectDesc({ project }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="pr-2 text-sm">Live Demo</span>{" "}
+            <span className="text-sm px-1 ">Live Demo</span>{" "}
             <img
-              className="m-0 p-0 w-5"
+              className="m-0 w-5"
               src={"/assets/projects/icons8-share.svg"}
             />
           </a>
