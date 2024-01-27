@@ -21,6 +21,3 @@ firebase init
 npm run build
 firebase deploy
 ```
-MIT License
-
-Copyright (c) 2024 Goutham V
