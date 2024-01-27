@@ -127,6 +127,16 @@ function TechStack() {
         </div>
         <div className="relative inline-block group py-1">
           <span className="absolute m-0 p-2 py-0 top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black rounded-md border border-black whitespace-nowrap opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+            Tailwind CSS
+          </span>
+          <img
+            className="m-0 p-2.5"
+            src="assets/techstack/icons8-tailwind-css.svg"
+            alt="tailwind"
+          />
+        </div>
+        <div className="relative inline-block group py-1">
+          <span className="absolute m-0 p-2 py-0 top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black rounded-md border border-black whitespace-nowrap opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
             Figma
           </span>
           <img
