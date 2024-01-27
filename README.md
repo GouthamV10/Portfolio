@@ -1,8 +1,25 @@
-# React + Vite
+My Personal Portfolio
+link - https://portfoliogoutham.web.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Description
+This is my personal portfolio website built using Vite, React.js, and Tailwind CSS. The project showcases my skills, projects, and experiences in a clean and user-friendly manner.
 
-Currently, two official plugins are available:
+Deployment
+Before deploying to Firebase, make sure to set up your Firebase project.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+bash
+Copy code
+
+# Login to your Firebase account
+
+firebase login
+
+# Initialize Firebase project (follow the prompts)
+
+firebase init
+
+# Deploy to Firebase
+
+npm run build
+firebase deploy
+Your portfolio is now live at the provided Firebase hosting URL.
