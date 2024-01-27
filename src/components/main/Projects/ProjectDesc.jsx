@@ -5,29 +5,52 @@ function ProjectDesc({ project }) {
   let gitcheck = github;
   let linkcheck = link;
   return (
-    <div className="projectdesc">
-      <h4>{title}</h4>
-      <p>{desc}</p>
-      <div className="tech">
+    <div className="projectdesc flex flex-col justify-around m-0 ">
+      <h4 className="m-0 text-cyan-700 text-xl p-0 pb-2 font-semibold text-center">
+        {title}
+      </h4>
+      <p className="p-0 pb-2 text-base text-center">{desc}</p>
+      <div className="tech flex justify-center items-center flex-wrap p-0 m-0 pb-2 text-left">
         {tech.map((techItem, index) => (
-          <h5 key={index}>{techItem}</h5>
+          <h5
+            className="m-0 text-lg p-0 px-2 italic text-gray-700 underline"
+            key={index}
+          >
+            {techItem}
+          </h5>
         ))}
       </div>
-      <div className="desclinks">
+      <div className="flex justify-center items-center m-0 p-2 gap-10">
         {gitcheck === "" ? (
           <span></span>
         ) : (
-          <a href={github} target="_blank" rel="noopener noreferrer">
-            <span>Code </span>
-            <img src={"/assets/projects/icons8-github-48.png"} />
+          <a
+            className="text-black flex items-center no-underline"
+            href={github}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="pr-2 text-sm">Code </span>
+            <img
+              className="m-0 p-0 w-5"
+              src={"/assets/projects/icons8-github-48.png"}
+            />
           </a>
         )}
         {linkcheck === "" ? (
           <span></span>
         ) : (
-          <a href={link} target="_blank" rel="noopener noreferrer">
-            <span>Live Demo</span>{" "}
-            <img src={"/assets/projects/icons8-share.svg"} />
+          <a
+            className="text-black flex items-center no-underline"
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="pr-2 text-sm">Live Demo</span>{" "}
+            <img
+              className="m-0 p-0 w-5"
+              src={"/assets/projects/icons8-share.svg"}
+            />
           </a>
         )}
       </div>

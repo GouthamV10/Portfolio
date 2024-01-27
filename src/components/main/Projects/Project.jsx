@@ -7,7 +7,7 @@ function Project({ id, image, project }) {
   const comp2 = <ProjectDesc project={project} />;
 
   return (
-    <div className="project">
+    <div className="my-5 p-5 w-85 bg-zinc-50 rounded-xl flex items-center justify-center gap-10 shadow-md max-sm:flex-col ">
       {id % 2 === 0 ? (
         <>
           {comp2}

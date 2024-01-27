@@ -1,7 +1,10 @@
 function AboutMeImage() {
   return (
-    <div className="aboutmeimg">
-      <img src="assets/aboutme.webp" />
+    <div>
+      <img
+        className="border-inset border-black rounded-lg"
+        src="assets/aboutme.webp"
+      />
     </div>
   );
 }
