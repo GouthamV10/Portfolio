@@ -1,6 +1,6 @@
 # My Personal Portfolio
 
-Visit my portfolio [here](https://portfoliogoutham.web.app/)
+Visit my portfolio <a href="https://portfoliogoutham.web.app/" target="_blank" rel="nopener noreferrer">here</a>.
 
 ## Description
 
